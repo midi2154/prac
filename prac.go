@@ -352,3 +352,22 @@ func main() {
 	fmt.Println(result)
 
 }
+
+/*
+//shortest version of titleCase
+
+package main
+
+import (
+	"fmt"
+)
+*/
+
+func main() {
+	fmt.Println(ToCap("hEllo"))
+}
+
+func capitalize(s string) string {
+	return strings.ToUpper(string(s[0])) + strings.ToLower(s[1:])
+}
+
